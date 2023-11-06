@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header {
+    display: flex;
+    background-image: url(imgs/fundo_aniversario.jpg);
+    flex-direction: row-reverse;  
+    justify-content: space-evenly;
+    box-shadow: 5px 2px 2px rgb(241, 241, 206);
+}
+
+header img {
+    width: 7%;
+}
+
+header h1 { 
+    font-family: "Cedarville Cursive", cursive;
+}
+
+#introducao h2 {
+    font-weight: 300;
+}
+
+#introducao, #cartinhas-passadas h2 {
+    text-align: center;
+}
+
+#cartinhas-passadas {
+    margin: 1% 15%;
+    background-color: rgba(243, 227, 210, 0.966);
+    background-image: url(imgs/857026-fundo-de-papel-velho-foto.jpg);
+    padding: 4%;
+    font-family: monospace;
+    font-size: 105%;
+    font-weight: 600;
+}
+
+#cartinhas-passadas h3 {
+    font-weight: 900;
+    text-decoration: underline;
+    padding-top: 3%;
+}
+
+.expandido {
+    white-space: nowrap;
+    height: 1.2em;
+    font-size: 1em;
+    line-height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.botao-expandir-retrair {
+    box-sizing: border-box;
+    height: 1em;
+    width: 1em;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 .5em 0 0;
+    font-size: inherit;
+    line-height: 1em;
+    border-width: 1px;
+}
+
+#dancing-queen p {
+    text-align: center;
+}
+
+#imagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 13px;
+}
+
+#slide {   
+    border: 2px solid greenyellow;
+    height: 450px;
+    padding: 12px 12px 48px 12px;
+}
+
+#body {
+    position: relative;
+}
+
+#botoes {
+    position: fixed;
+    bottom: 10px;
+    opacity: 1;
+}
+
+.controle {
+    width: 120px;
+    height: 35px;
+    padding: 6px 10px;
+    border: 1px solid #999;
+    background-image: linear-gradient(to bottom, #ddf, #bbe);
+    transition: all 100ms ease-out;
+}
+
+.controle:hover {
+    border-color: #aaa;
+    background-image: linear-gradient(to bottom, #eef, #ccf);
+    font-size: 120%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#info {
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 195, 0.712);
+    background-color: rgba(240, 248, 255, 0.76);
+    padding: 4px;
+    box-shadow: 1px 2px 2px rgba(59, 59, 59, 0.7);
+}
+
+#info:empty {
+  display: none;
+}
+
+#slide-esquerda, #slide-direita {
+    height: 120px;
+}
+
+#imagem-anterior, #imagem-proxima {
+    perspective: 900px;
+    box-shadow: 1px 1px 1px gray;
+}
+
+#slide-esquerda {
+    transform: rotateY(-20deg);
+}
+
+#slide-direita {
+    transform: rotateY(20deg);
+}
