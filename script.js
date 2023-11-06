@@ -7,6 +7,8 @@ let indiceMusica = 0
 songEl.addEventListener('ended', () => {
     songEl.src = `songs/[${indiceMusica}].mp3`
     indiceMusica++
+
+    songEl.play()
 })
 
 let botaoExpandirRetrairEl = document.querySelectorAll('.botao-expandir-retrair')
